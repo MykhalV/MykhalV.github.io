@@ -49,7 +49,7 @@
           </nav>
     </header>
 
-    <main class="container">
+    <main class="container-fluid">
         <div class="row">
             <div class="col-1">
                 <h1 class="fs-5 text-primary text-center ms-2">Category</h1>
@@ -69,10 +69,19 @@
 
 
            
-             <div class="col-9">
+             <div class="col-9 p-1">
+                 <div class="row">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+                </div>
+
                 <div class="row d-flex justify-content-evenly gap-1">
                     <div class="col-3">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card w-md-25" style="width: 18rem;">
                             <img src="https://images.samsung.com/is/image/samsung/ru-t35f-lf24t350fhixci-frontblack-309031108?$720_576_PNG$" class="card-img-top w-50" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Card title</h5>
@@ -101,6 +110,22 @@
                             </div>
                       </div>
                       </div>
+                      <div class="row ">
+                          <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav></div>
                 </div>
             </div>
         </div>              <!-- end row -->        
